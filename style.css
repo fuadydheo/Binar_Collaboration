@@ -190,6 +190,12 @@ nav button {
     margin-top: -13rem;
 }
 
+
+
+
+
+
+
 /* =========== FAQ =========== */
 .faq-section {
     position: relative;
@@ -206,7 +212,7 @@ nav button {
     margin-left: 5rem;
 }
 .faq_right {
-    /* margin:  1.2rem  0.5rem; */
+    margin:  1.2rem  0.5rem;
     margin-right: 5rem;
 }
 .accordion {
@@ -233,4 +239,60 @@ nav button {
 
 }
 
+
+
+
+
+
+
+
+
+
+/* Service Section */
+.service-section{
+    position: relative;
+    top: 4rem;
+    overflow: hidden;
+    height: 70vh;
+    margin-bottom: 5rem;
+}
+.service-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    align-items: center;
+    height: 100%;
+}
+.service_left-image{
+    /* width: 60%;
+    /* height: 60%; */
+    margin: 0 0 2rem 5rem;
+    /* position: absolute; */
+    width: 374px;
+    height: 366px;
+}
+.service_right{
+    margin: 0 5rem 2.4rem 0;
+}
+.service_right h1{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 36px;
+}
+.service_right p{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    margin: 1rem 5rem 3rem 0;
+}
+.service_right-list li{
+    font-family: 'Helvetica';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+}
 
