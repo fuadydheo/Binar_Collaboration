@@ -18,6 +18,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
 
+    <!-- Swiper JS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
     <div class="main-section">
@@ -43,9 +49,9 @@
             <div class="col__left">
                 <h2>Sewa & Rental Mobil Terbaik di kawasan (Lokasimu)</h2>
                     <p>
-                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
-                        Soluta praesentium nisi officia omnis illum dignissimos similique 
-                        necessitatibus in laboriosam itaque.
+                        Selamat datang di Binar Rental. Kami menyediakan mobil kualitas 
+                        terbaik dengan harga terjangkau. Selalu siap melayani kebutuhanmu
+                        untuk sewa mobil selama 24 jam.
                     </p>
                 <a href="courses.html" class="btn btn-primary">Mulai Sewa Mobil</a>
             </div>
@@ -55,6 +61,8 @@
             </div>
         </div>
     </div>
+
+    <!-- ======== Service Section ========= -->
     <div class="service-section service-container">
         <div class="service_left">
             <div class="service_left-image">
@@ -75,6 +83,8 @@
             </div>
         </div>
     </div>
+
+    <!-- ========= WhyUse Section ========= -->
     <div class="whyuse-section">
         <h3>Why Us?</h3>
         <p>Mengapa harus pilih Binar Car Rental?</p>
@@ -104,7 +114,32 @@
             </article>
         </div>
     </div>
-    <div class="testimonialsection"></div>
+
+    <!-- ========== Testimonial Section ========== -->
+    <div class="testimonialsection mySwiper">
+        <h2>Testimonial</h2>
+        <p id="p1">Berbagai review positif dari pelanggan kami</p>
+        <div class="testimonial__container swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/template_3.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <div class="ratings">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                    </div>
+                    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <p id="p2"><strong>Clara fauna 33, Bogor</strong></p>
+                </div>
+            </article>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
 
     <div class="gettingstarted-section">
       <div class="container">
@@ -114,7 +149,10 @@
       </div>
       </div>
           <div class="row justify-content-center fs-6 text-center">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. In hic, ratione libero, consequuntur, impedit dolor iste ea nam ipsam necessitatibus aut adipisci quos debitis tenetur! Voluptatem hic modi quaerat a.</p>
+            <small>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. In hic, ratione libero,  consequuntur, <br> 
+                impedit dolor iste ea nam ipsam necessitatibus aut adipisci quos debitis <br>
+                tenetur! Voluptatem hic modi quaerat a.</small>
           </div>
            <a href="#" class="btn btn-primary">Mulai Sewa Mobil</a>
         </div>
@@ -168,17 +206,17 @@
                     <li><a href="index.html">Our services</a></li>
                     <li><a href="index.html">Why Us</a></li>
                     <li><a href="index.html">Testimonial</a></li>
-                    <li><a href="index.html">FAQS</a></li>
+                    <li><a href="index.html">FAQ</a></li>
                 </ul>
             </div>
-    
+
             <div class="footer3">
-                <p>Connect with us</p>
+                <small>Connect with us</small>
                 <ul class="footer__social">
                     <div class="social__icon">
                         <li><a href="#"></a><i class="uil uil-facebook-f"></i></li>
                     </div>
-                    
+
                     <div class="social__icon">
                         <li><a href="#"></a><i class="uil uil-instagram"></i></li>
                     </div>
@@ -186,17 +224,17 @@
                     <div class="social__icon">
                         <li><a href="#"></a><i class="uil uil-twitter-alt"></i></li>
                     </div>   
-                 
+
                     <div class="social__icon">
                         <li><a href="#"></a><i class="uil uil-envelope-alt"></i></li>
                     </div>   
-                 
+
                     <div class="social__icon">
                         <li><a href="#"></a><i class="uil uil-comment-alt-message"></i></li>
                     </div>   
                 </ul>
             </div>
-    
+
             <div class="footer_copyright">
                 <small>Copyright &copy; Binar 2022</small>
                 <div class="logo"></div>
@@ -205,9 +243,18 @@
     </footer>
     
 
-   
-
 <!-- ======================= FOOTER END ==================== -->
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
