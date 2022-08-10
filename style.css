@@ -342,3 +342,60 @@ nav button {
   font-size: 14px;
   line-height: 20px;
 }
+
+/* Testimonial */
+.testimonialsection h2 {
+  padding-top: 5rem;
+  text-align: center;
+}
+
+.testimonialsection #p1 {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.testimonial__container {
+  background: var(--color-bg1);
+  margin-top: 3rem;
+  position: relative;
+  width: 90vw;
+  max-width: 40rem;
+  min-height: 20rem;
+  border-radius: 0.6em;
+  transform: translate(-50%, -50%);
+  left: 26%;
+  top: 50%;
+  box-shadow: 0 1.8em 3em rgba(1, 17, 39, 0.2);
+  display: flex;
+}
+
+.testimonial {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  margin: 2rem 2rem;
+}
+
+.avatar img {
+  margin: 3rem auto 0.5rem auto;
+  display: block;
+  width: 10em;
+  border-radius: 50%;
+}
+
+.testimonial__info {
+  top: 20%;
+  position: relative;
+  max-width: 20rem;
+}
+
+.testimonial__info #p2 {
+  padding-top: 2rem;
+}
+
+.ratings {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  top: 10px;
+  gap: 0.2rem;
+}

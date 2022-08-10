@@ -14,6 +14,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;800;900&display=swap" rel="stylesheet">
 
+    <!-- Swiper JS -->
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
+
 </head>
 <body>
     <div class="main-section">
@@ -100,7 +106,30 @@
             </article>
         </div>
     </div>
-    <div class="testimonialsection"></div>
+    <div class="testimonialsection mySwiper">
+        <h2>Testimonial</h2>
+        <p id="p1">Berbagai review positif dari pelanggan kami</p>
+        <div class="testimonial__container swiper-wrapper">
+            <article class="testimonial swiper-slide">
+                <div class="avatar">
+                    <img src="./images/template_3.jpg">
+                </div>
+                <div class="testimonial__info">
+                    <div class="ratings">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                        <img src="./images/icon_star.svg">
+                    </div>
+                    <p id="p2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam, ad.</p>
+                    <p id="p2"><strong>Clara fauna 33, Bogor</strong></p>
+                </div>
+            </article>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
+    </div>
 
     <div class="gettingstarted-section">
       <div class="container">
@@ -157,6 +186,18 @@
     <div class="footer-section">
         <h5>footer</h5>
     </div>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+        });
+      </script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="main.js"></script>
 </body>
 </html>
